@@ -6,7 +6,7 @@
 
 目前还**不能保证已经完全符合**学位论文规范要求，欢迎贡献代码或提出issue！
 
-使用方法
+## 使用方法
 
 - Windows 用户
 
@@ -36,3 +36,32 @@
 typst c project-application.typ # 开题报告
 typst c thesis.typ # 毕业论文
 ```
+
+## 效果展示
+
+### 开题报告
+<p align="center"> 
+<img src="./images/project-application-1.jpg" width=40%/> 
+<img src="./images/project-application-4.jpg" width=40%/> 
+</p>
+
+
+### 毕业论文
+
+<p align="center"> 
+<img src="./images/thesis-1.jpg" width=40%/> 
+<img src="./images/thesis-2.jpg" width=40%/> 
+</p>
+
+
+<p align="center"> 
+<img src="./images/thesis-5.jpg" width=40%/> 
+<img src="./images/thesis-9.jpg" width=40%/> 
+</p>
+
+### 人工智能综合实践 实验报告
+
+<p align="center"> 
+<img src="./images/ai_practice_expeirment_report-1.jpg" width=40%/> 
+<img src="./images/ai_practice_expeirment_report-2.jpg" width=40%/> 
+</p>
