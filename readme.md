@@ -6,9 +6,10 @@
 
 - 《人工智能综合实践》的实验报告模板，`./ai-practice/ai-practice-expeirment-report.typ`
 - 本科毕业设计模板
-  - `project-application.typ`: 开题报告
-  - `thesis.typ`: 本科毕业论文
-  - `info.typ`: 个人信息
+  - [`project-assignment.typ`](./project-assignment.typ): 任务书
+  - [`project-application.typ`](./project-application.typ): 开题报告
+  - [`thesis.typ`](./thesis.typ): 本科毕业论文
+  - [`info.typ`](./info.typ): 个人信息
 
 ## 使用方法
 
@@ -32,6 +33,20 @@ typst c thesis.typ # 毕业论文
 ```
 
 ## 效果展示
+
+### 任务书
+
+<p align="center"> 
+<img src="./images/project-assignment-1.jpg" width=30%/> 
+<img src="./images/project-assignment-2.jpg" width=30%/> 
+<img src="./images/project-assignment-3.jpg" width=30%/> 
+</p>
+
+<p align="center"> 
+<img src="./images/project-assignment-4.jpg" width=30%/> 
+<img src="./images/project-assignment-5.jpg" width=30%/> 
+<img src="./images/project-assignment-6.jpg" width=30%/> 
+</p>
 
 ### 开题报告
 
@@ -62,5 +77,8 @@ typst c thesis.typ # 毕业论文
 ## Logs
 
 - 2025.01.09 by [hhw](https://github.com/houhuawei23/)
-  - rename and move `ai-practice-expeirment-report.typ` to folder `./ai-practice`
-  - move exported pdfs to folder `exported-pdf`
+  - rename and move `ai-practice-expeirment-report.typ` to folder `./ai-practice`;
+  - move exported pdfs to folder `exported-pdf`.
+- 2025.01.16 by [hhw](https://github.com/houhuawei23/)
+  - add template for [project assignment](./project-assignment.typ);
+  - update reademe.md, add exported pdf and images.
