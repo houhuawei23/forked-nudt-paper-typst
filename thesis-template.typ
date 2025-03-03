@@ -1,4 +1,5 @@
 #import "@preview/cuti:0.2.1": show-cn-fakebold
+#import "templates/i-figured.typ"
 #show: show-cn-fakebold
 #let tnr = "Times New Roman"
 #let fsong = (tnr, "FangSong")
@@ -139,25 +140,50 @@
   set text(size: 12pt)
   set par(leading: 1em, spacing: 1em)
   show outline.entry: it => {
-    let seq = it.body.children
-    let cname = seq.remove(0)
-    [#cname#h(1em)#it.element.body #box(width: 1fr, it.fill) #it.page]
+    set par(first-line-indent: 0em)
+    let seq = it.body()
+    let element = it.element.body
+    let prefix = it.prefix()
+    // [#prefix #it.page()]
+    // v(0.5em)
+    // let cname = seq.remove(0)
+    [#h(2em)#prefix#h(1em)#it.element.body #box(width: 1fr, it.fill) #it.page()
+    ]
   }
   show outline.entry.where(level: 6): it => {
+    set par(first-line-indent: 0em)
     preface-outline.update(true)
     let ebody = it.element.body
-    [#text(weight: "regular")[#it.element.body] #box(width: 1fr, it.fill) #it.page]
+    [#text(weight: "regular")[#it.element.body] #box(width: 1fr, it.fill) #it.page()
+    
+    ]
     preface-outline.update(false)
   }
   show outline.entry.where(level: 7): it => {
+    set par(first-line-indent: 0em)
     let loc = it.element.location()
     let page_n = loc.page-numbering()
-    [#h(-3em) #it.element.body #box(width: 1fr, it.fill) #it.page]
+    [#it.element.body #box(width: 1fr, it.fill) #it.page()
+    
+    ]
   }
   show outline.entry.where(level: 1): it => {
-    let seq = it.body.children
-    let cname = seq.remove(0)
-    [第#cname 章#h(1em)#it.element.body #box(width: 1fr, it.fill) #it.page]
+    set par(first-line-indent: 0em)
+    let ele = it.body()
+    let seq = it.element
+    // let cname = seq.remove(0)
+    [第#it.prefix() 章#h(1em)#ele #box(width: 1fr, it.fill) #it.page()
+    
+    ]
+  }
+  show outline.entry.where(level: 2): it => {
+    set par(first-line-indent: 0em)
+    let ele = it.body()
+    let seq = it.element.numbering
+    // let cname = seq.remove(0)
+    let prefix = it.prefix()
+    [#h(1em)#prefix#h(1em)#it.element.body #box(width: 1fr, it.fill) #it.page()
+    ]
   }
   outline(title: "", indent: 1em)
   pagebreak()
@@ -254,6 +280,9 @@
     #let cur = counter(heading).display()
     第#cur 章#h(1em)#it.body
     #v(1em)
+    #counter(figure.where(kind: "i-figured-"+repr(image))).update(0)
+    #counter(figure.where(kind: "i-figured-"+repr(table))).update(0)
+    #counter(figure.where(kind: "i-figured-"+repr(math.equation))).update(0)
   ]
 
   show heading.where(
