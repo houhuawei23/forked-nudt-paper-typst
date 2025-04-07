@@ -3,8 +3,8 @@
 #import "info.typ": *
 
 #set heading(numbering: "1.")
-#show heading: i-figured.reset-counters.with(extra-kinds: ("atom",))
-#show figure: i-figured.show-figure.with(extra-prefixes: (atom: "atom:"))
+#show heading: i-figured.reset-counters
+#show figure: i-figured.show-figure
 #show math.equation: i-figured.show-equation
 
 #show figure: it => {
@@ -46,11 +46,13 @@
 === 设计原则
 
 
-通过这些设计原则和风格的融合，凌霄宝殿不仅成为了天界的标志性建筑，也成为了连接过去与未来、东方与西方、自然与科技的桥梁。它的设计和建造，是对天界建筑艺术的一次伟大尝试，也是对天界文化的一种传承与发展。
+通过这些设计原则和风格的融合，凌霄宝殿不仅成为了天界的标志性建筑，也成为了连接过去与未来、东方与西方、自然与科技的桥梁。它的设计和建造，正如@fig:temple-architecture-1 和@fig:temple-architecture-2 所示，是对天界建筑艺术的一次伟大尝试，也是对天界文化的一种传承与发展。
 
-#figure(image("images/sichuan-highway.jpg"), caption: "凌霄宝殿的建筑设计图")
+#figure(image("images/sichuan-highway.jpg", width: 50%), caption: "凌霄宝殿的建筑设计图")<temple-architecture-1>
 
+#figure(image("images/sichuan-highway.jpg", width: 50%), caption: "凌霄宝殿的建筑设计图")<temple-architecture-2>
 
+#pagebreak()
 
 = 凌霄宝殿建设与维护中的环境保护
 
@@ -58,11 +60,13 @@
 
 == 环境保护与天界可持续发展
 
-环境保护是天界可持续发展的基础和保障。凌霄宝殿作为天界的象征，其建设与维护中的环境保护工作，不仅关系到天界形象，更关系到天界未来的发展。只有坚持绿色发展理念，将环境保护融入凌霄宝殿建设与维护的全过程，才能实现天界经济、社会、环境的协调发展，为天界居民创造更加美好的生活环境。
+环境保护是天界可持续发展的基础和保障。如@fig:temple-architecture-3 所示，凌霄宝殿作为天界的象征，其建设与维护中的环境保护工作，不仅关系到天界形象，更关系到天界未来的发展。只有坚持绿色发展理念，将环境保护融入凌霄宝殿建设与维护的全过程，才能实现天界经济、社会、环境的协调发展，为天界居民创造更加美好的生活环境。
+
+#figure(image("images/sichuan-highway.jpg", width: 50%), caption: "凌霄宝殿的建筑设计图")<temple-architecture-3>
 
 === 选址与规划
 
-在凌霄宝殿选址阶段，应优先选择环境承载力强、生态敏感性低的区域，避开珍稀动植物栖息地和生态脆弱区。规划设计应遵循生态优先原则，合理布局功能区，预留生态廊道，构建人与自然和谐共生的空间格局。
+在凌霄宝殿选址阶段，应优先选择环境承载力强、生态敏感性低的区域，避开珍稀动植物栖息地和生态脆弱区。规划设计应遵循生态优先原则，合理布局功能区，预留生态廊道，构建人与自然和谐共生的空间格局。（@tbl:temple-location）
 
 
 
@@ -84,7 +88,7 @@
   [_Contentious_ \ Competitive and easily agitated.],
   [_Detached_ \ Independent and calm, may appear aloof.],
 ), caption: [Neuroticism and Agreeableness]
-)
+)<temple-location>
 
 === 材料选择与施工
 

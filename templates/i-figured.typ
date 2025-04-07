@@ -56,12 +56,7 @@
           if type(it.kind) == str { it.kind } else { repr(it.kind) },
           default: fallback-prefix,
       ) + str(it.label))
-      if it.kind == table {
-        [#new-label #figure]
-      }
-      else {
-        [#figure #new-label]
-      }
+      [#figure #new-label]
     } else {
       figure
     }
